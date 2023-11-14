@@ -4,27 +4,24 @@ std::string problemSolution3(float height, char S) {
     // write your code here
 if (S == 'M') {
         if (height < 1.70) {
-            problemSolution3 = "Short";
+            return "Short";
         } else if (height >= 1.70 && height < 1.85) {
-            problemSolution3 = "Normal";
+            return "Normal";
         } else {
-            problemSolution3 = "Tall";
+            return "Tall";
         }
     } else if (S == 'F') {
         if (height < 1.60) {
-            problemSolution3 = "Short";
+            return "Short";
         } else if (height >= 1.60 && height < 1.75) {
-            problemSolution3 = "Normal";
+            return "Normal";
         } else {
-            problemSolution3 = "Tall";
+            return "Tall";
         }
-    } else {
-
-        problemSolution3 = "Invalid sex input";
-    }
+    } 
 
     // Return the result
-    return problemSolution3;
+   
     // use return to return your result
     // make use of control flow statements
 }
